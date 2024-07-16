@@ -9,6 +9,8 @@ import { UserListComponent } from './prs/user/user-list/user-list.component';
 import { MenuComponent } from './prs/menu/menu/menu.component';
 import { HomeComponent } from './prs/misc/home/home.component';
 import { AboutComponent } from './prs/misc/about/about.component';
+import { UserViewComponent } from './prs/user/user-view/user-view.component';
+import { E404Component } from './prs/misc/e404/e404.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AboutComponent } from './prs/misc/about/about.component';
     UserListComponent,
     MenuComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    UserViewComponent,
+    E404Component
   ],
   imports: [
     BrowserModule,FormsModule,
