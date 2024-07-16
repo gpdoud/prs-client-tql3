@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
 import { User } from '../user.class';
+import { SystemService } from '../../../system.service';
 
 @Component({
   selector: 'app-user-create',
@@ -15,6 +16,7 @@ export class UserCreateComponent {
   user: User = new User();
 
   constructor(
+    private sys: SystemService,
     private usrsvc: UserService,
     private router: Router
   ) {}
@@ -32,5 +34,8 @@ export class UserCreateComponent {
   }
 
   ngOnInit(): void {
+    if(this.sys.loggedInUser == null) {
+      this.router.navigateByUrl("/user/login");
+    }
   }
 }
