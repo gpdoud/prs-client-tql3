@@ -11,6 +11,9 @@ import { HomeComponent } from './prs/misc/home/home.component';
 import { AboutComponent } from './prs/misc/about/about.component';
 import { UserViewComponent } from './prs/user/user-view/user-view.component';
 import { E404Component } from './prs/misc/e404/e404.component';
+import { UserCreateComponent } from './prs/user/user-create/user-create.component';
+import { UserChangeComponent } from './prs/user/user-change/user-change.component';
+import { UserLoginComponent } from './prs/user/user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { E404Component } from './prs/misc/e404/e404.component';
     HomeComponent,
     AboutComponent,
     UserViewComponent,
-    E404Component
+    E404Component,
+    UserCreateComponent,
+    UserChangeComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,FormsModule,

@@ -1,6 +1,6 @@
 <div>
     <app-menu />
-    <h3>User View</h3>
+    <h3>User Change</h3>
 
     <main>
         <table class="table table-sm">
@@ -44,11 +44,7 @@
             </tbody>
         </table>
         <div>
-            <button (click)="toggleVerifyRemove()" class="btn btn-danger">Delete</button>
-            <span *ngIf="verifyRemove">
-                <span> | </span>
-                <button (click)="remove()" class="btn btn-danger">Verify Delete</button>
-            </span>
+            <button (click)="save()" class="btn btn-primary">Save</button>
         </div>
     </main>
 </div>
