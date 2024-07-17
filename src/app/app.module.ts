@@ -22,6 +22,10 @@ import { ProductListComponent } from './prs/product/product-list/product-list.co
 import { ProductViewComponent } from './prs/product/product-view/product-view.component';
 import { ProductCreateComponent } from './prs/product/product-create/product-create.component';
 import { ProductChangeComponent } from './prs/product/product-change/product-change.component';
+import { RequestListComponent } from './prs/request/request-list/request-list.component';
+import { RequestViewComponent } from './prs/request/request-view/request-view.component';
+import { RequestCreateComponent } from './prs/request/request-create/request-create.component';
+import { RequestChangeComponent } from './prs/request/request-change/request-change.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { ProductChangeComponent } from './prs/product/product-change/product-cha
     ProductListComponent,
     ProductViewComponent,
     ProductCreateComponent,
-    ProductChangeComponent
+    ProductChangeComponent,
+    RequestListComponent,
+    RequestViewComponent,
+    RequestCreateComponent,
+    RequestChangeComponent
   ],
   imports: [
     BrowserModule,FormsModule,

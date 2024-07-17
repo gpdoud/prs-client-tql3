@@ -16,21 +16,30 @@ import { ProductChangeComponent } from './prs/product/product-change/product-cha
 import { ProductCreateComponent } from './prs/product/product-create/product-create.component';
 import { ProductListComponent } from './prs/product/product-list/product-list.component';
 import { ProductViewComponent } from './prs/product/product-view/product-view.component';
+import { RequestChangeComponent } from './prs/request/request-change/request-change.component';
+import { RequestCreateComponent } from './prs/request/request-create/request-create.component';
+import { RequestListComponent } from './prs/request/request-list/request-list.component';
+import { RequestViewComponent } from './prs/request/request-view/request-view.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
 
+  { path: "product/list", component: ProductListComponent },
+  { path: "product/create", component: ProductCreateComponent },
+  { path: "product/view/:id", component: ProductViewComponent },
+  { path: "product/change/:id", component: ProductChangeComponent },
+  
+  { path: "request/list", component: RequestListComponent },
+  { path: "request/create", component: RequestCreateComponent },
+  { path: "request/view/:id", component: RequestViewComponent },
+  { path: "request/change/:id", component: RequestChangeComponent },
+  
   { path: "user/list", component: UserListComponent },
   { path: "user/create", component: UserCreateComponent },
   { path: "user/view/:id", component: UserViewComponent },
   { path: "user/change/:id", component: UserChangeComponent },
   { path: "user/login", component: UserLoginComponent },
   
-  { path: "product/list", component: ProductListComponent },
-  { path: "product/create", component: ProductCreateComponent },
-  { path: "product/view/:id", component: ProductViewComponent },
-  { path: "product/change/:id", component: ProductChangeComponent },
-
   { path: "vendor/list", component: VendorListComponent },
   { path: "vendor/create", component: VendorCreateComponent },
   { path: "vendor/view/:id", component: VendorViewComponent },
