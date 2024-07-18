@@ -1,9 +1,8 @@
 <div>
     <app-menu />
-    <h3>Request List</h3>
+    <h3>Request List for review</h3>
 
     <main>
-        <a routerLink="/request/create">Create New</a>
         <table class="table table-sm table-striped">
             <thead>
                 <tr>
@@ -25,11 +24,7 @@
                     <td>{{ request.total | currency}}</td>
                     <td>{{ request.user?.username }}</td>
                     <td>
-                        <a routerLink="/request/view/{{ request.id }}">View</a>
-                        <span> | </span>
-                        <a routerLink="/request/change/{{ request.id }}">Change</a>
-                        <span> | </span>
-                        <a routerLink="/request/lines/{{ request.id }}">Lines</a>
+                        <a routerLink="/request/review/{{ request.id }}">Review</a>
                     </td>
                 </tr>
             </tbody>

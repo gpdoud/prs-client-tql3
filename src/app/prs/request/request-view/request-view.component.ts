@@ -16,7 +16,7 @@ export class RequestViewComponent {
   verifyRemove: boolean = false;
 
   constructor(
-    private usrsvc: RequestService,
+    private reqsvc: RequestService,
     private route: ActivatedRoute,
     private router: Router
   ) {}
@@ -26,10 +26,10 @@ export class RequestViewComponent {
   }
 
   remove(): void {
-    this.usrsvc.remove(this.request.id).subscribe({
+    this.reqsvc.remove(this.request.id).subscribe({
       next: (res) => {
         console.log("Request deleted successfully!");
-        this.router.navigateByUrl("/user/list");
+        this.router.navigateByUrl("/request/list");
       },
       error: (err) => {
         console.error(err);
@@ -40,7 +40,7 @@ export class RequestViewComponent {
   ngOnInit(): void {
     let id = this.route.snapshot.params["id"];
     console.log("ID is ", id);
-    this.usrsvc.get(id).subscribe({
+    this.reqsvc.get(id).subscribe({
       next: (res) => {
         console.log(res);
         this.request = res as Request;

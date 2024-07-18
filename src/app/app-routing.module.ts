@@ -20,6 +20,8 @@ import { RequestChangeComponent } from './prs/request/request-change/request-cha
 import { RequestCreateComponent } from './prs/request/request-create/request-create.component';
 import { RequestListComponent } from './prs/request/request-list/request-list.component';
 import { RequestViewComponent } from './prs/request/request-view/request-view.component';
+import { RequestReviewsComponent } from './prs/request/request-reviews/request-reviews.component';
+import { RequestLinesComponent } from './prs/request/request-lines/request-lines.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -33,6 +35,8 @@ const routes: Routes = [
   { path: "request/create", component: RequestCreateComponent },
   { path: "request/view/:id", component: RequestViewComponent },
   { path: "request/change/:id", component: RequestChangeComponent },
+  { path: "request/reviews", component: RequestReviewsComponent },
+  { path: "request/lines/:id", component: RequestLinesComponent },
   
   { path: "user/list", component: UserListComponent },
   { path: "user/create", component: UserCreateComponent },

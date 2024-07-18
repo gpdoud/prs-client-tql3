@@ -17,9 +17,9 @@
                     <td>Justification</td>
                     <td><input [(ngModel)]="request.justification" [disabled]="isReadonly" /></td>
                 </tr>
-                <tr hidden>
-                    <td>Rejection Reason</td>
-                    <td><input [(ngModel)]="request.rejectionReason" [disabled]="isReadonly" /></td>
+                <tr *ngIf="request.rejectionReason">
+                    <td class="text-danger fw-bold">Rejection Reason</td>
+                    <td><input [(ngModel)]="request.rejectionReason" class="text-danger fw-bold" [disabled]="isReadonly" /></td>
                 </tr>
                 <tr>
                     <td>Delivery Mode</td>
@@ -27,11 +27,11 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td><input [(ngModel)]="request.status" disabled /></td>
+                    <td><input [ngModel]="request.status" disabled /></td>
                 </tr>
                 <tr>
                     <td>Total</td>
-                    <td><input [(ngModel)]="request.total" disabled /></td>
+                    <td><input [ngModel]="request.total" disabled /></td>
                 </tr>
                 <tr>
                     <td>Username</td>
