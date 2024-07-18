@@ -1,0 +1,7 @@
+.left, .right {
+    display: inline-block;
+    width: 49%;
+}
+.right {
+    text-align: right;
+}

@@ -24,6 +24,7 @@ import { RequestReviewsComponent } from './prs/request/request-reviews/request-r
 import { RequestLinesComponent } from './prs/request/request-lines/request-lines.component';
 import { RequestlineCreateComponent } from './prs/requestline/requestline-create/requestline-create.component';
 import { RequestlineChangeComponent } from './prs/requestline/requestline-change/requestline-change.component';
+import { RequestReviewItemComponent } from './prs/request/request-review-item/request-review-item.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/request/list", pathMatch: "full" },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: "request/change/:id", component: RequestChangeComponent },
   { path: "request/reviews", component: RequestReviewsComponent },
   { path: "request/lines/:id", component: RequestLinesComponent },
+  { path: "request/review/item/:id", component: RequestReviewItemComponent },
   
   { path: "requestline/create/:rid", component: RequestlineCreateComponent },
   { path: "requestline/change/:id", component: RequestlineChangeComponent },
