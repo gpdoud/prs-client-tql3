@@ -28,6 +28,8 @@ import { RequestCreateComponent } from './prs/request/request-create/request-cre
 import { RequestChangeComponent } from './prs/request/request-change/request-change.component';
 import { RequestReviewsComponent } from './prs/request/request-reviews/request-reviews.component';
 import { RequestLinesComponent } from './prs/request/request-lines/request-lines.component';
+import { RequestlineCreateComponent } from './prs/requestline/requestline-create/requestline-create.component';
+import { RequestlineChangeComponent } from './prs/requestline/requestline-change/requestline-change.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { RequestLinesComponent } from './prs/request/request-lines/request-lines
     RequestCreateComponent,
     RequestChangeComponent,
     RequestReviewsComponent,
-    RequestLinesComponent
+    RequestLinesComponent,
+    RequestlineCreateComponent,
+    RequestlineChangeComponent
   ],
   imports: [
     BrowserModule,FormsModule,
