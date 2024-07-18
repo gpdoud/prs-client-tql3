@@ -10,8 +10,8 @@ export class SystemService {
   loggedInUser: User | null = null;
 
   checkLogin(): void {
-    console.warn("WARNING: Skipping CheckLogin()")
-    return
+    //console.warn("WARNING: Skipping CheckLogin()")
+    //return
     if(this.loggedInUser == null) {
       this.router.navigateByUrl("/user/login");
     }

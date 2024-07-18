@@ -27,7 +27,7 @@ import { RequestlineChangeComponent } from './prs/requestline/requestline-change
 import { RequestReviewItemComponent } from './prs/request/request-review-item/request-review-item.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "/request/list", pathMatch: "full" },
+  { path: "", redirectTo: "/user/login", pathMatch: "full" },
 
   { path: "product/list", component: ProductListComponent },
   { path: "product/create", component: ProductCreateComponent },
